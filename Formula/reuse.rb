@@ -9,8 +9,7 @@ class Reuse < Formula
 
     def install
         libexec.install Dir["*"]
-        bin.write_exec_script (libexec/"frontend.sh")
-        system "mv", (bin/"frontend.sh"), (bin/"reusec")
+        bin.write_exec_script (libexec/"reusec")
         system "bash", (libexec/"build.sh")
         system "bash", (libexec/"standard-library/build.sh")
     end
