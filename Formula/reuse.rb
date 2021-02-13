@@ -2,7 +2,7 @@
 class Reuse < Formula
     desc "Compiler for the Reuse programming language"
     homepage "https://github.com/redien/reuse-lang"
-    head "https://github.com/redien/reuse-lang.git"
+    head "https://github.com/redien/reuse-lang.git", branch: "base"
 
     depends_on "ocaml"
     depends_on "coreutils"
