@@ -10,6 +10,7 @@ class Reuse < Formula
     def install
         libexec.install Dir["*"]
         bin.write_exec_script (libexec/"reusec")
+        bin.write_exec_script (libexec/"reuse_module")
         system "bash", (libexec/"build.sh")
     end
 
